@@ -1,0 +1,123 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  z-index: 5;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  background-color: none;
+}
+.nav__logo svg {
+  width: 90px;
+  margin-left: 15px;
+}
+.header a {
+  text-decoration: none;
+  color: #dedede;
+}
+.header a:hover {
+  color: white;
+}
+.left {
+  display: none;
+}
+.responsiveList {
+  display: flex;
+  align-self: center;
+}
+.right {
+  align-self: center;
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right > * {
+  padding-left: 25px;
+  cursor: pointer;
+}
+.avatar {
+  object-fit: cover;
+  width: 45px;
+}
+.arrow-avatar {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.nav__black {
+  background-color: #292929;
+}
+.container-nav {
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+}
+
+.container-nav .active {
+  text-decoration: none;
+  color: white;
+}
+.container-nav .inactive {
+  color: #ddd;
+  text-decoration: none;
+}
+.menu {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 37px;
+  text-align: center;
+  transform: translateX(115px);
+  background-color: #292929;
+  border-radius: 0 0 5px 5px;
+  padding: 4px;
+}
+@media only screen and (min-width: 900px) {
+  .nav__logo svg {
+    width: auto;
+  }
+  .left {
+    display: flex;
+    align-self: center;
+    width: 35%;
+    justify-content: space-around;
+  }
+  .responsiveList {
+    display: none;
+  }
+  .right {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    justify-content: flex-end;
+  }
+  .right > * {
+    padding-left: 25px;
+  }
+  .avatar {
+    object-fit: contain;
+    width: 45px;
+  }
+  .arrow-avatar {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    background-color: #292929 !important;
+  }
+}

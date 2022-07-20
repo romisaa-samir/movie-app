@@ -1,0 +1,153 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 33px;
+  padding-top: 60px;
+  width: 100%;
+}
+.containerposter {
+  background-image: linear-gradient(to top, rgb(0, 0, 0), #00000024);
+  width: 100%;
+  height: 100vh;
+}
+.poster {
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  object-fit: cover;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+}
+.series {
+  display: flex;
+  align-items: center;
+  letter-spacing: 7px;
+  color: #dedede;
+}
+.name-of-movie {
+  /* font-weight: bolder; */
+  font-size: larger;
+}
+.review-section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  top: 100px;
+  left: 50px;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.review-section img {
+  width: 33px;
+}
+.story-of-movie {
+  font-size: 1.1rem;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+}
+.btns {
+  display: flex;
+  height: 40px;
+  padding: 1px;
+}
+.btns i {
+  font-size: 1.1rem;
+  padding-right: 6px;
+}
+.btns > * {
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btns .plays {
+  width: 10%;
+  margin-right: 10px;
+  background: white;
+  font-weight: bold;
+}
+.btns .info {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 14%;
+  color: #fff;
+}
+.directors {
+  width: 70%;
+  /* height: 150px; */
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+  font-size: 35px;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.directors > * {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.directors p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.top-ten {
+  display: flex;
+  font-size: 1.5rem;
+}
+.top-ten p {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 900px) {
+  .series {
+    font-size: 20px;
+  }
+  .section {
+    padding-left: 30px;
+    padding-top: 60px;
+  }
+  .name-of-movie {
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .review-section {
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+  }
+  .review-section img {
+    width: 25px;
+  }
+  .story-of-movie {
+    display: none;
+  }
+  .btns {
+    width: 50%;
+    margin-bottom: 15px;
+
+  }
+  .btns .plays {
+    width: 32%;
+  }
+  .btns .info {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .btns > * {
+    font-size: 0.8rem;
+  }
+  .btns .plays {
+    width: 55%;
+  }
+  .btns .info {
+    width: 65%;
+  }
+}

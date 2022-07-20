@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-details {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.swiper {
+  width: 40%;
+}
+.celeberityimg {
+  height: 400px;
+}
+.pWrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: 21px;
+  width: 40%;
+  margin: auto;
+}
+.side-details {
+  line-height: 24px;
+  flex-flow: wrap;
+  width: 60%;
+  margin: auto;
+}
+.actingWrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.actingCard {
+  border-radius: 10px;
+}
+.actingCard p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.actingCard img {
+  width: 60%;
+}
+@media only screen and (max-width: 750px) {
+  .actingWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

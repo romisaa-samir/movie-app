@@ -1,0 +1,37 @@
+.container {
+  margin: 5%;
+}
+.containerCard {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.containerCard > * {
+  text-align-last: center;
+}
+.containerCard img {
+  width: 70%;
+}
+.movieCard {
+  text-align: center;
+  /* width: 80%; */
+}
+.movieCard img {
+  width: 60%;
+}
+.details {
+  height: 30px;
+  width: 25%;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(121, 20, 20);
+  color: white;
+}
+@media only screen and (max-width: 750px) {
+  .containerCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}

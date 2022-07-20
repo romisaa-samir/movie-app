@@ -1,0 +1,66 @@
+.mySwiper {
+  width: 70%;
+  height: 400px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.swiper-slide {
+  background: #f1f1f1;
+  color: #000;
+  text-align: center;
+  line-height: 300px;
+}
+.imgswiper {
+  width: 300px;
+  height: 200px;
+}
+.sections {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 15%;
+}
+.imgContainer {
+  width: 30%;
+}
+.imgContainer img {
+  width: 100%;
+  object-fit: fill;
+  height: 414px;
+}
+.table {
+  width: 70%;
+}
+.ul {
+  list-style-type: none;
+}
+.ul li {
+  height: 50px;
+}
+
+.ul li > * {
+  padding: 8px;
+  height: inherit;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 750px) {
+  .sections {
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .ul li > * {
+    padding: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.movieCard {
+  text-align: center;
+  mix-blend-mode: exclusion;
+}
+.movieCard:hover {
+  mix-blend-mode: unset;
+}
+.movieCard p {
+  font-size: 20px;
+}
+.details {
+  height: 30px;
+  width: 90px;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(121, 20, 20);
+  color: white;
+  background-color: #db0000;
+}
+.side-details {
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  justify-content: space-around;
+}
